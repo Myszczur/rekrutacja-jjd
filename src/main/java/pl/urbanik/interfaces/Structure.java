@@ -1,9 +1,10 @@
-package pl.urbanik;
+package pl.urbanik.interfaces;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface Structure {
+
     // zwraca dowolny element o podanym kolorze
     Optional findBlockByColor(String color);
 
@@ -12,4 +13,6 @@ public interface Structure {
 
     //zwraca liczbę wszystkich elementów tworzących strukturę
     int count();
+
+    void addBlock(Block block);
 }
